@@ -22,6 +22,8 @@ img{
 img:hover{
     scale: 1.1;
     transition: 0.10s;
+    opacity: 0.30;   
+    
 
 }
 h1{
@@ -33,11 +35,22 @@ h1{
 h4{
     position: relative;
     color: #ffff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 16px;
 }
 p{
     color: #ffff;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.destaques{
+    position: relative;
+    right: 65px;                
+    bottom: 280px;      
+    border: 1px solid red;
+    border-radius: 0px 0px 40px;    
+    background-color: red;
+    margin-left: 85px;  
+    margin-right: 85px;
 }

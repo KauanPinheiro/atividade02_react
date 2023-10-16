@@ -11,30 +11,32 @@ import theLast from "../../img/serie_theLastOfUs.jpg"
 import fayra from "../../img/series_fayraAndraste.jpg"
 import { useLayoutEffect } from "react"
 import Listatitulo from "../Listatitulos/Listatitulo"
+import bruxo from "../../img/the_witcher.png"
+import bruxoTwo from"../../img/oBruxo.jpg"
 
 
 function Cartaz() {
 
     const filmes = [
-        { img: vigadores, nome: "OS VIGADORES"},
-        { img: mario, nome: "MARIO" },
-        { img: adaoNegro, nome: "ADÃO NEGRO" },
-        { img: avatar, nome: "AVATAR" },
-        { img: somDaLiberdade, nome: "SOM DA LIBERDADE"  },
+        { img: vigadores, nome: "OS VIGADORES",legenda:"2019"},
+        { img: mario, nome: "MARIO",legenda:"2023" },
+        { img: adaoNegro, nome: "ADÃO NEGRO", legenda:"2022"},
+        { img: avatar, nome: "AVATAR", legenda:"2022" },
+        { img: somDaLiberdade, nome: "SOM DA LIBERDADE", legenda:"2023" },
     ]
 
     const series = [
-        {img: thefresh , nome: "O MALUCO NO PEDAÇO" },
-        {img: lucifer, nome: "LUCIFER" },
-        {img: stranger, nome: "STRANGER THINGS" },
-        {img: theLast, nome: "THE LAST OF US" },
-        {img: fayra, nome: "FAYRA ANDRASTE"  },
+        {img: thefresh , nome: "O MALUCO NO PEDAÇO", legenda:"1990" },
+        {img: lucifer, nome: "LUCIFER", legenda:"2016" },
+        {img: stranger, nome: "STRANGER THINGS", legenda:"2016" },
+        {img: theLast, nome: "THE LAST OF US", legenda:"2023" },
+        {img: bruxoTwo, nome: "THE WICHER ",legenda:"2019 "  },
     ]
 
     return (
         <>
-            <Listatitulo lista={filmes} titulo={"Destaques"}/>
-            <Listatitulo lista={series} titulo={"Series"}/>
+            <Listatitulo lista={filmes} titulo={"Filmes"} subTitulo={"Destaques"}/>
+            <Listatitulo lista={series} titulo={"Series"} />
         </>
     )
 }
