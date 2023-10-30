@@ -18,7 +18,7 @@ import bruxoTwo from"../../img/oBruxo.jpg"
 function Cartaz() {
 
     const filmes = [
-        { img: vigadores, nome: "OS VIGADORES",legenda:"2019"},
+        { img: vigadores, nome: "OS VIGADORES",legenda:"2019", destaque:true},
         { img: mario, nome: "MARIO",legenda:"2023" },
         { img: adaoNegro, nome: "ADÃO NEGRO", legenda:"2022"},
         { img: avatar, nome: "AVATAR", legenda:"2022" },
@@ -35,7 +35,7 @@ function Cartaz() {
 
     return (
         <>
-            <Listatitulo lista={filmes} titulo={"Filmes"} subTitulo={"Destaques"}/>
+            <Listatitulo lista={filmes} titulo={"Filmes"} />
             <Listatitulo lista={series} titulo={"Series"} />
         </>
     )

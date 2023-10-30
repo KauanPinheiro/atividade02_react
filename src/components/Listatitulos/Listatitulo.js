@@ -2,6 +2,7 @@
 import "./listatitulo.css"
 
 function Listatitulo({lista,titulo,legenda,subTitulo}){
+
     return(
         <>
         
@@ -10,19 +11,23 @@ function Listatitulo({lista,titulo,legenda,subTitulo}){
         <div className="body">
             {
                 lista.map((movie) =>
-                    <div className="container">
-                    <figuricapiotn>
+                    <div className="container-t">
+                    
+                    {
+                        movie.destaque === true ? 
+                        <div className="titulo"><p>Destaques</p></div>
+                        :""
+                    }
+                    <div>
                         <img src={movie.img} alt="" />
-                        <p className="destaques">Destaques</p>
-                        </figuricapiotn>
+                        
                         <h4>{movie.nome}</h4>
                         <p>{movie.legenda}</p>
+                        </div>
                         
-                        
-                    </div>
-                )
-            }
-            </div>
+                </div>
+            )}
+        </div>
         </>
     )
 }

@@ -1,3 +1,23 @@
 .texto{
     text-align: initial;    
 }
+.titulo{
+    position: absolute;
+    position: absolute;
+    background: red;
+    width: 85px;
+    height: 20px;
+    display: flex;
+    justify-items: center;
+    border-bottom-right-radius: 10px;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.titulo p{
+    margin: 0;
+    background-color: red;
+}
+.container-t{
+    display: flex;
+}
